@@ -66,6 +66,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        // currentYear: new Date().getFullYear()
+    });
+});
+
 app.get('/bad', (req, res) => {
     // res.send('<h1>Hello Express</h1>');
     res.send({
